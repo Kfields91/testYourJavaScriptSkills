@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- bootstrap -->
     <link
@@ -11,11 +11,50 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <rel
     <!-- css reset -->
     <!-- css stylesheet -->
     <!-- can change colors of original gif must have same elements -->
-</head>
-<body>
+  </head>
+  <body>
+    <!-- navbar here -->
+
+    <main class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div>
+            <h1>Test Your JavaScript Skills Quiz!</h1>
+          </div>
+          <div class="card">
+            <div class="card-body" >
+              <!-- adding css classes to match -->
+              <h2 class = "hide">Quiz Question 1</h2>
+             <!-- KEEP <hr /> HERE gives space between the questions and the  -->
+              <hr />
+              <form class="col-md-9" id = "allButtons">
+                <ul id = "questionButtons">
+                  <li>
+                    <button id ="hide" class = "buttonA" >a.</button>
+                  </li>
+                  <li>
+                    <button id ="hide" class = "buttonB">b</button>
+                  </li>
+                  <li>
+                    <button id = "hide" class = "buttonC">c</button>
+                  </li>
+                  <li>
+                    <button id ="hide" class = "buttonD">d</button>
+                  </li>
+                </ul>
+                <!-- <form class="block"> -->
+                
+                <button class="btn btn-primary" id="hide2" type="submit">START</button>
+                <button class="btn btn-primary" id="hide" type="submit">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- timer and view high score html tab link is ((probably a navbar from bootstrap)) -->
     <!-- decide bootstrap pieces "submit" button, card for container-->
     <!-- container 
@@ -29,6 +68,21 @@
     BEGINNING BUTTON = start. start/submit/enter manipulation of the sumbit button element at different places in the games
     line break and then display on page "Correct!" or "Wrong!" -->
     <!--end of container  -->
-
-</body>
+    <!-- add my own javascript file? will that be a problem with bootstrap where do I place it in line here? -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
