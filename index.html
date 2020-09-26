@@ -11,7 +11,7 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <rel
+    <link rel = "stylesheet" href = "style.css"/>
     <!-- css reset -->
     <!-- css stylesheet -->
     <!-- can change colors of original gif must have same elements -->
@@ -22,6 +22,9 @@
       <li class="nav-item">
         <!-- create another html for the high scores to be stored -->
         <a class="nav-link active" href="#">HIGH SCORES</a>
+      </li>
+      <li class = "timer">
+        Timer
       </li>
     </ul>
 
@@ -34,29 +37,29 @@
           <div class="card">
             <div class="card-body" >
               <!-- adding css classes to match -->
-              <h2 class = "hide">Quiz Question 1</h2>
+              <h2 id = "hide">Quiz Question 1</h2>
              <!-- KEEP <hr /> HERE gives space between the questions and the  -->
-              <hr />
+              <!-- <hr /> -->
               <form class="col-md-9" id = "allButtons">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum temporibus corporis eos, nemo distinctio minus fugit perspiciatis error quibusdam sed dolorum unde eius. Possimus dolorum explicabo tenetur dolorem! Voluptatum, praesentium.</p>
                 <ul id = "questionButtons">
-                  <li>
-                    <button id ="hide" class = "buttonA" >A</button>
+                  <li id ="hide">
+                    <button class = "buttonA" >A</button>
                   </li>
-                  <li>
-                    <button id ="hide" class = "buttonB">B</button>
+                  <li id ="hide">
+                    <button class = "buttonB">B</button>
                   </li>
-                  <li>
-                    <button id = "hide" class = "buttonC">C</button>
+                  <li id ="hide">
+                    <button class = "buttonC">C</button>
                   </li>
-                  <li>
-                    <button id ="hide" class = "buttonD">D</button>
+                  <li id ="hide">
+                    <button class = "buttonD">D</button>
                   </li>
                 </ul>
                 <!-- <form class="block"> -->
                 
-                <button class="btn btn-primary" id="hide2" type="submit">START</button>
-                <button class="btn btn-primary" id="hide" type="submit">Next</button>
+                <button class="btn btn-primary" class = "startButton" id="hide2" type="submit">START</button>
+                <button class="btn btn-primary" class = "nextButton" id="hide" type="submit">Next</button>
             </div>
           </div>
         </div>
@@ -91,5 +94,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
