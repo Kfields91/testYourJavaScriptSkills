@@ -3,3 +3,10 @@
 /* font-family? google fonts? */
 /* h1 style? */
 /* everything appears to start centered and then hang to the left once quiz begins through end */
+#hide2 {
+  display: none;
+}
+
+.hide {
+  display: none;
+}

@@ -11,22 +11,32 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <link rel = "stylesheet" href = "style.css"/>
+    <link rel = "stylesheet" href = "./style.css"/>
     <!-- css reset -->
     <!-- css stylesheet -->
     <!-- can change colors of original gif must have same elements -->
   </head>
   <body>
-    <!-- navbar here -->
+    <!-- navbar here
     <ul class="nav">
       <li class="nav-item">
-        <!-- create another html for the high scores to be stored -->
-        <a class="nav-link active" href="#">HIGH SCORES</a>
-      </li>
-      <li class = "timer">
+        create another html for the high scores to be stored -->
+        <!-- <a class="nav-link active" href="#">HIGH SCORES</a> -->
+      <!-- </li>
+      <li id = "timer">
         Timer
       </li>
-    </ul>
+    </ul> --><nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand"></a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="./scoreboard.js">HIGH SCORES<span class="sr-only">(current)</span></a>
+        </li>
+    <div id = "timer">
+    </div>
+  </div>
+</nav>
 
     <main class="container">
       <div class="row">
@@ -37,29 +47,29 @@
           <div class="card">
             <div class="card-body" >
               <!-- adding css classes to match -->
-              <h2 id = "hide">Quiz Question 1</h2>
+              <h2 class = "hide">Quiz Question 1</h2>
              <!-- KEEP <hr /> HERE gives space between the questions and the  -->
               <!-- <hr /> -->
-              <form class="col-md-9" id = "allButtons">
+              <form class="col-md-9" class = "allButtons">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum temporibus corporis eos, nemo distinctio minus fugit perspiciatis error quibusdam sed dolorum unde eius. Possimus dolorum explicabo tenetur dolorem! Voluptatum, praesentium.</p>
                 <ul id = "questionButtons">
-                  <li id ="hide">
+                  <li class ="hide">
                     <button class = "buttonA" >A</button>
                   </li>
-                  <li id ="hide">
+                  <li class ="hide">
                     <button class = "buttonB">B</button>
                   </li>
-                  <li id ="hide">
+                  <li class ="hide">
                     <button class = "buttonC">C</button>
                   </li>
-                  <li id ="hide">
+                  <li class ="hide">
                     <button class = "buttonD">D</button>
                   </li>
                 </ul>
                 <!-- <form class="block"> -->
                 
-                <button class="btn btn-primary" class = "startButton" id="hide2" type="submit">START</button>
-                <button class="btn btn-primary" class = "nextButton" id="hide" type="submit">Next</button>
+                <button class="btn btn-primary" id = "startButton" type="submit">START</button>
+                <button class="btn btn-primary" id = "nextButton" type="submit">Next</button>
             </div>
           </div>
         </div>
@@ -94,6 +104,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
