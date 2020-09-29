@@ -33,3 +33,12 @@ button.hide {
 #questionScreen.hide {
   display: none;
 }
+.questionScreen {
+  background-color: green;
+}
+.nextButtonHide {
+  display: none;
+}
+.nextButtonAlive {
+  background-color: blueviolet;
+}

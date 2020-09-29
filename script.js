@@ -52,6 +52,8 @@ function startingClock() {
 }
 var mode = "hide";
 // var quiz = "questions";
+nextButton.setAttribute("class", "hide");
+console.log("bye ", nextButton);
 
 startButtonEl.addEventListener("click", function () {
   console.log("start button is clicked");
@@ -59,8 +61,9 @@ startButtonEl.addEventListener("click", function () {
   startScreenID.setAttribute("class", "hide");
   console.log("hiding", startScreenID);
 
-  nextButton.classList.remove(".hide");
-  console.log("Hello ", nextButton);
+  nextButton.setAttribute("class", "nextButtonAlive");
+
+  // BEGIN HERE WHEN COME BACK
   // questionScreen.setAttribute("class", "questions");
   // console.log("question screen showing", questionScreen);
 
@@ -72,10 +75,8 @@ startButtonEl.addEventListener("click", function () {
 nextButton.addEventListener("click", function () {
   console.log("next button is clicked");
 
-  questionScreen.classList.remove(".hide");
+  questionScreen.setAttribute("class", "questionScreen");
   console.log("Am I present?", questionScreen);
-
-  
 });
 // when start button is clicked
 // hide start button, ptag,
