@@ -36,3 +36,5 @@ var question = [
     correctAnswer: "If",
   },
 ];
+console.log("whats on here", question[0].questionTitle);
+console.log("and", question[0].answerChoices);

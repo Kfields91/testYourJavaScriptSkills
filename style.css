@@ -11,6 +11,25 @@
   display: none;
 }
 
-.questions {
+#questions {
   background-color: aliceblue;
+}
+#startScreen {
+  background-color: aqua;
+}
+/*change this later and get actual button elements  */
+button.hide {
+  display: none;
+}
+#buttonA,
+#buttonB,
+#buttonC,
+#buttonD {
+  background-color: linen;
+  padding: 50px 100px;
+  text-align: left;
+}
+
+#questionScreen.hide {
+  display: none;
 }

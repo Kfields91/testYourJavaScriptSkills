@@ -1,64 +1,41 @@
 var startButtonEl = document.querySelector("#startButton");
 var nextButton = document.querySelector("#nextButton");
 var countDownEl = document.querySelector("#timer");
-var questionScreen = document.querySelector("#question");
+var questionScreenDiv = document.querySelector("#question");
 var questionTitleH2 = document.querySelector("#questionTitle");
 var answerChoicesDiv = document.querySelector("#answerChoices");
 var correctAnswerDiv = document.querySelector("#correctAnswer");
 var pTag = document.querySelectorAll(".pTag");
 var endPageDiv = document.querySelector("#endPage");
 var startScreenID = document.querySelector("#startScreen");
+var questionScreen = document.querySelector("#questionScreen");
+var buttonA = document.querySelector("#buttonA");
+var buttonB = document.querySelector("#buttonB");
+var buttonC = document.querySelector("#buttonC");
+var buttonA = document.querySelector("#buttonD");
+
 console.log("start", startButtonEl);
 console.log("buttons", nextButton);
 console.log("buttons", countDownEl);
-console.log("questionArrHTML", questionDiv);
+// console.log("questionArrHTML", questionDiv);
 console.log("questionTitles", questionTitleH2);
 console.log("answer choices", answerChoicesDiv);
 console.log("correctAnswer", correctAnswerDiv);
 console.log("ptag", pTag);
-console.log("end game", endPageDiv);
 console.log("startscreen", startScreenID);
+console.log("questions", questionScreen);
+console.log("end game", endPageDiv);
+console.log("I'm the", buttonA);
 
-var questionDiv = [questionTitleH2, answerChoicesDiv, correctAnswerDiv];
-console.log(questionDiv);
+// Don't know if I need this
+// here just in case
+// try applying to this div if cannot get others to work properly.
+// var questionDiv = [questionTitleH2, answerChoicesDiv, correctAnswerDiv];
+// console.log(questionDiv);
+// questionScreenDiv.textContent = "";
+console.log("type", Object);
+console.log("I've got a question here!", questionTitle[1]);
 
-var questionScreen = questionDiv;
-console.log("hi", questionScreen);
-
-// var questionTitle = [
-//   "create question here",
-//   "Here's another question",
-//   "another question",
-//   "last question",
-// ];
-// console.log(questionTitle.length);
-
-// var multipleChoice = ["a", "b", "c", "d"];
-// var correctAnswer = ["a", "b", "c", "d"];
-// var aAnswers = ["", "", "", ""];
-// var bAnswers = ["hi", "", "", ""];
-// var cAnswers = ["", "", "", ""];
-// var dAnswers = ["", "", "", ""];
-
-// console.log(aAnswers);
-// console.log(bAnswers[0]);
-// console.log(cAnswers);
-// console.log(dAnswers);
-
-// quizDisplay = [
-//   questionTitle,
-//   aAnswers,
-//   bAnswers,
-//   cAnswers,
-//   dAnswers,
-//   correctAnswer,
-// ];
-// console.log(quizDisplay);
-// console.log(Object);
-// var questionTitleAsks = questionTitle.length;
-// console.log(questionTitle[1]);
-
-// countDownEl.appendChild;
 function startingClock() {
   var timeOnClock = 50;
   timeOnClock--;
@@ -82,16 +59,23 @@ startButtonEl.addEventListener("click", function () {
   startScreenID.setAttribute("class", "hide");
   console.log("hiding", startScreenID);
 
+  nextButton.classList.remove(".hide");
+  console.log("Hello ", nextButton);
   // questionScreen.setAttribute("class", "questions");
   // console.log("question screen showing", questionScreen);
 
   // questionDiv.("class", "hide");
-  console.log("showing!", questionDiv);
+  // console.log("showing!", questionDiv);
   startingClock();
 });
 
 nextButton.addEventListener("click", function () {
   console.log("next button is clicked");
+
+  questionScreen.classList.remove(".hide");
+  console.log("Am I present?", questionScreen);
+
+  
 });
 // when start button is clicked
 // hide start button, ptag,

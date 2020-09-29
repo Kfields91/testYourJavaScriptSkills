@@ -28,15 +28,20 @@
         </p>
         <button id="startButton">START</button>
       </div>
-      <div id="questionScreen">
+      <div id="questionScreen" class="hide">
         <h2 id="questionTitle"></h2>
-        <div id="answerChoices"></div>
+        <div id="answerChoices">
+          <button id="buttonA"></button>
+          <button id="buttonB"></button>
+          <button id="buttonC"></button>
+          <button id="buttonD"></button>
+        </div>
         <div id="correctAnswer"></div>
-        <button id="nextButton">Next</button>
       </div>
       <div id="endPage">
         <form class="form"></form>
       </div>
+      <button id="nextButton">Next</button>
     </main>
     <script src="./script.js"></script>
     <script src="questions.js"></script>
