@@ -1,14 +1,3 @@
-/* change cutton color */
-/* decide background color, do I want card container to be same color? or different? */
-/* font-family? google fonts? */
-/* h1 style? */
-/* everything appears to start centered and then hang to the left once quiz begins through end */
-*,
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 body {
   padding: 0;
   margin: 0;
