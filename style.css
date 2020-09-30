@@ -6,9 +6,9 @@ body {
   height: 8000;
   padding: 100px;
 }
-#hide2 {
+/* #hide2 {
   display: none;
-}
+} */
 
 .hide {
   display: none;
@@ -17,9 +17,9 @@ body {
 /* #questions { */
 /* background-color: aliceblue; */
 /* } */
-#startScreen {
-  background-color: aqua;
-}
+/* #startScreen {
+  background-color: aqua; */
+/* } */
 /*change this later and get actual button elements  */
 button.hide {
   display: none;
@@ -50,7 +50,7 @@ button.hide {
 .nextButtonAlive {
   background-color: blueviolet;
 }
-.btn.correct {
+/* .btn.correct {
 }
 .btn.wrong {
-}
+} */
