@@ -13,7 +13,7 @@ var buttonA = document.querySelector("#buttonA");
 var buttonB = document.querySelector("#buttonB");
 var buttonC = document.querySelector("#buttonC");
 var buttonD = document.querySelector("#buttonD");
-
+// push
 console.log("start", startButtonEl);
 console.log("buttons", nextButton);
 console.log("buttons", countDownEl);
