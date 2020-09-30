@@ -3,6 +3,20 @@
 /* font-family? google fonts? */
 /* h1 style? */
 /* everything appears to start centered and then hang to the left once quiz begins through end */
+*,
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 1000px;
+  height: 8000
+  padding: 100px;
+}
 #hide2 {
   display: none;
 }
@@ -11,9 +25,9 @@
   display: none;
 }
 
-#questions {
-  background-color: aliceblue;
-}
+/* #questions { */
+/* background-color: aliceblue; */
+/* } */
 #startScreen {
   background-color: aqua;
 }
@@ -25,9 +39,14 @@ button.hide {
 #buttonB,
 #buttonC,
 #buttonD {
-  background-color: linen;
-  padding: 50px 100px;
+  background-color: rgb(245, 134, 23);
+  padding: 30px;
   text-align: left;
+}
+.btn-grid {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 10px;
 }
 
 #questionScreen.hide {
@@ -42,3 +61,10 @@ button.hide {
 .nextButtonAlive {
   background-color: blueviolet;
 }
+.btn.correct {
+
+}
+.btn.wrong {
+
+}
+

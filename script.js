@@ -12,7 +12,7 @@ var questionScreen = document.querySelector("#questionScreen");
 var buttonA = document.querySelector("#buttonA");
 var buttonB = document.querySelector("#buttonB");
 var buttonC = document.querySelector("#buttonC");
-var buttonA = document.querySelector("#buttonD");
+var buttonD = document.querySelector("#buttonD");
 
 console.log("start", startButtonEl);
 console.log("buttons", nextButton);
@@ -26,7 +26,9 @@ console.log("startscreen", startScreenID);
 console.log("questions", questionScreen);
 console.log("end game", endPageDiv);
 console.log("I'm the", buttonA);
-
+console.log("I'm the", buttonB);
+console.log("I'm the", buttonC);
+console.log("I'm the", buttonD);
 // Don't know if I need this
 // here just in case
 // try applying to this div if cannot get others to work properly.
@@ -44,25 +46,37 @@ function startingClock() {
     } else {
       timeOnClock > 50;
       clearInterval(timeInterval);
-      // startQuiz();
+      startQuiz();
     }
     countDownEl.textContent = timeOnClock + "seconds remaining!";
     console.log("time", timeOnClock);
   }, 1000);
 }
-var mode = "hide";
-// var quiz = "questions";
+
 nextButton.setAttribute("class", "hide");
 console.log("bye ", nextButton);
+var mode = "hide";
 
 startButtonEl.addEventListener("click", function () {
   console.log("start button is clicked");
-
+  questionScreen.setAttribute("class", "questionScreen");
+  console.log("Am I present?", questionScreen);
   startScreenID.setAttribute("class", "hide");
   console.log("hiding", startScreenID);
-
   nextButton.setAttribute("class", "nextButtonAlive");
+  console.log("Next", nextButton);
 
+  function startQuiz() {}
+
+  var answerA = question[0].answerChoices;
+  console.log("I'm an answer", answerA);
+  questionScreen.setAttribute("class", "questionScreen");
+  console.log("Am I present?", questionScreen);
+  // for (x in answerChoices) {
+  //   document.getElementById("ButtonA").innerHTML += answerChoices[0];
+  //   // questionTitle[0].answerChoices[0];
+  //   console.log("q1. answer A", answerChoices);
+  // },
   // BEGIN HERE WHEN COME BACK
   // questionScreen.setAttribute("class", "questions");
   // console.log("question screen showing", questionScreen);
@@ -74,10 +88,12 @@ startButtonEl.addEventListener("click", function () {
 
 nextButton.addEventListener("click", function () {
   console.log("next button is clicked");
-
-  questionScreen.setAttribute("class", "questionScreen");
-  console.log("Am I present?", questionScreen);
+  // the next set of questions are displayed
+  function NextQuestion() {}
+  // questionScreen.setAttribute("class", "questionScreen");
+  // console.log("Am I present?", questionScreen);
 });
+console.log(" 1", NextQuestion);
 // when start button is clicked
 // hide start button, ptag,
 // unhide next button, a,b,c,d buttons, h2

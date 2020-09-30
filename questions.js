@@ -1,4 +1,5 @@
-var question = [
+var question, x;
+question = [
   {
     questionTitle: " What does NaN represent?",
     answerChoices: [
