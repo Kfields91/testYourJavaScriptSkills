@@ -39,3 +39,4 @@ question = [
 ];
 console.log("whats on here", question[0].questionTitle);
 console.log("and", question[0].answerChoices);
+console.log(question[0].answerChoices.every);

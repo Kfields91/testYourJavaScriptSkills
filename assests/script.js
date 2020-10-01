@@ -67,9 +67,13 @@ startButtonEl.addEventListener("click", function () {
   console.log("Next", nextButton);
 
   function startQuiz() {}
-
-  var answerA = question[0].answerChoices;
-  console.log("I'm an answer", answerA);
+  startingClock();
+  var answerDisplay = question[0].answerChoices;
+  buttonA.textContent = answerDisplay[0];
+  buttonB.textContent = answerDisplay[1];
+  buttonC.textContent = answerDisplay[2];
+  buttonD.textContent = answerDisplay[3];
+  console.log("I'm an answer", answerADisplay);
   questionScreen.setAttribute("class", "questionScreen");
   console.log("Am I present?", questionScreen);
   // for (x in answerChoices) {
@@ -83,7 +87,6 @@ startButtonEl.addEventListener("click", function () {
 
   // questionDiv.("class", "hide");
   // console.log("showing!", questionDiv);
-  startingClock();
 });
 
 nextButton.addEventListener("click", function () {
